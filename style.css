@@ -37,8 +37,6 @@ header{
 }
 
 
-
-
 .navbar ul{
     list-style-type: none;
     gap: 59px;
@@ -56,5 +54,95 @@ header{
 
 .navbar a{
     text-decoration: none;
+    font-size: 21px;
     color: #50514F;
+}
+
+#big1{
+    /* Type@80 */
+
+    position: absolute;
+    width: 565px;
+    height: 120px;
+    left: 403px;
+    top: 205px;
+
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 150%;
+    /* identical to box height, or 120px */
+
+    color: #000000; 
+
+}
+
+#big2{
+    /* Type@80 */
+
+    position: absolute;
+    width: 452px;
+    height: 120px;
+    left: 458px;
+    top: 297px;
+
+
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 150%;
+    /* identical to box height, or 120px */
+
+    color: #000000;
+}
+
+#small{
+   /* Type@27 */
+
+    position: absolute;
+    width: 615px;
+    height: 82px;
+    left: 376px;
+    top: 449px;
+
+
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 150%;
+    /* or 40px */
+    text-align: center;
+
+    color: #000000;
+}
+
+#blob-left{
+    background-image: url("background-images/blob-left.png");
+    background-size: contain;
+  
+    position: absolute;
+
+    left: -240px;
+    top: 0px;
+    width: 600px;
+    height: 481px;
+
+}
+
+#blob-right{
+    background-image: url("background-images/blob-right.png");
+    background-size: contain;
+  
+    position: absolute;
+
+    right: -174px;
+    top: 373px;
+
+    width: 481.23px;
+    height: 536.45px;
+
+
 }
