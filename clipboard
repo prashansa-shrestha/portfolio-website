@@ -1,0 +1,118 @@
+/* rows */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 67px;
+
+position: absolute;
+width: 1302px;
+height: 530px;
+left: 30px;
+top: 834px;
+
+
+
+/* black */
+
+width: 494px;
+height: 530px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* rectangle-outer */
+
+position: absolute;
+width: 494px;
+height: 530px;
+left: 0px;
+top: 0px;
+
+background: #000000;
+border-radius: 45px;
+
+
+/* rectangle-inner */
+
+position: absolute;
+width: 340.01px;
+height: 366.53px;
+left: 153.99px;
+top: 163.47px;
+
+background: #FFFFFF;
+border-radius: 20px;
+
+
+/* project title */
+
+position: absolute;
+width: 288.34px;
+height: 61.09px;
+left: 41px;
+top: 50px;
+
+
+
+
+/* yellow */
+
+width: 741px;
+height: 530px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* rectangle-oute */
+
+position: absolute;
+width: 741px;
+height: 530px;
+left: 561px;
+top: 0px;
+
+background: #F6FEAA;
+border-radius: 45px;
+
+
+/* rectangle-inner */
+
+position: absolute;
+width: 510.02px;
+height: 366.53px;
+left: 791.98px;
+top: 163.47px;
+
+background: #FFFFFF;
+border-radius: 20px;
+
+
+/* project title */
+
+position: absolute;
+width: 432.51px;
+height: 61.09px;
+left: 44.66px;
+top: 50.09px;
+
+font-family: 'PT Serif';
+font-style: normal;
+font-weight: 700;
+font-size: 47px;
+line-height: 150%;
+/* or 70px */
+
+color: #000000;
+
