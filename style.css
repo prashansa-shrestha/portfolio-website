@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-.gradient-homepage-bg {
+/* ABOUT-BACKGROUND */
+
+.gradient-index-bg {
   position: absolute;
   width: 1366px;
   height: 2349px;
@@ -13,13 +15,37 @@
   );
 }
 
+#resume-body {
+  min-height: 300vh;
+  background: linear-gradient(
+    180deg,
+    rgba(164, 184, 196, 0.5) 0%,
+    rgba(208, 178, 193, 0.5) 20%,
+    rgba(251, 172, 190, 0.5) 100%
+  );
+  background-size: cover;
+}
+
 * {
   margin: 0;
   padding: 0;
   border: border-box;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensure the body covers full height */
+  display: flex;
+  flex-direction: column;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+
   font-family: "PT Serif", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -353,7 +379,8 @@ header {
   border-radius: 20px;
 }
 
-/* footer */
+/* FOOTER */
+
 footer {
   display: flex;
   flex-direction: column;
@@ -361,10 +388,12 @@ footer {
   align-items: center;
 
   position: absolute;
-  width: 1364.01px;
+  width: 100%;
   height: 164.5px;
   left: 2px;
-  top: 2121.5px;
+  bottom: 10px;
+
+  /* margin-top: auto; */
 
   font-family: "PT Serif";
   font-style: normal;
@@ -422,6 +451,12 @@ footer {
   left: 1158px;
   right: 85px;
   bottom: 32px;
+
+  pointer-events: auto;
+}
+
+.external-links a {
+  color: #000000;
 }
 
 #linkedin-icon {
@@ -448,8 +483,24 @@ footer {
   flex-grow: 0;
 }
 
+/* END FOOTER */
+
+/* ABOUT.HTML STARTS HERE! */
+
+.gradient-about-bg {
+  position: absolute;
+  width: 1366px;
+  height: 1096px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(164, 184, 196, 0.5) 0%,
+    rgba(208, 178, 193, 0.5) 20%,
+    rgba(251, 172, 190, 0.5) 100%
+  );
+}
+
 #greetings {
-  /* greetings */
   background-image: url("background-images/greetings.png");
   background-size: contain;
   position: absolute;
@@ -457,4 +508,450 @@ footer {
   top: 112px;
   height: 140px;
   width: 292px;
+}
+
+.about-section {
+  padding: 0px;
+  gap: 165px;
+
+  background: url("about-images/image-background.png");
+  background-size: cover;
+
+  position: relative;
+  width: 1220px;
+  height: 426px;
+  left: 73px;
+  top: 338px;
+
+  z-index: 1;
+
+  border-radius: 30px;
+}
+
+#text-description {
+  position: absolute;
+  width: 413px;
+  height: 299px;
+  left: 733px;
+  top: calc(50% - 299px / 2 + 0.5px);
+
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 150%;
+  /* or 40px */
+  text-align: justify;
+
+  color: #ffffff;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#grey-fill {
+  position: relative;
+  width: 1211px;
+  height: 425px;
+  left: 0px;
+  top: 0px;
+
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+}
+
+#picture-frame-1 {
+  position: absolute;
+  width: 300px;
+  height: 363px;
+  left: 354px;
+  top: 31px;
+
+  z-index: 2;
+
+  background: url("about-images/prashansa-un-house.jpg");
+  background-size: cover;
+  border-radius: 30px;
+}
+
+#picture-frame-2 {
+  position: absolute;
+  width: 300px;
+  height: 363px;
+  left: 25px;
+  top: 31px;
+
+  z-index: 2;
+
+  background: url("about-images/prashansa-infront-ictc.jpg");
+  background-size: cover;
+  border-radius: 30px;
+}
+
+/* RESUME PAGE STARTS */
+#vessel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 119px;
+
+  position: absolute;
+  width: 1238px;
+  height: 5096.54px;
+  left: 64px;
+  top: 128px;
+}
+
+#skills {
+  width: 1238px;
+  height: 188px;
+}
+
+#skill-title {
+  position: absolute;
+  width: 146px;
+  height: 92px;
+  left: 547px;
+  top: 0px;
+
+  font-size: 61px;
+  line-height: 150%;
+}
+
+#skill-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 18px;
+
+  position: absolute;
+  width: 1238px;
+
+  left: 0px;
+  top: 118px;
+}
+
+.skill-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 35px;
+  gap: 8px;
+
+  width: 139px;
+  /* height: 70px; */
+
+  background: #f5f5f5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+
+  font-size: 21px;
+  line-height: 150%;
+  /* identical to box height, or 32px */
+
+  color: #000000;
+}
+
+/* Machine Learning */
+#skill4 {
+  font-size: 16px;
+  flex: none;
+  order: 7;
+  flex-grow: 0;
+  width: 139px;
+  padding: 17px 5px;
+  height: 32px;
+}
+
+/* Git & GitHub */
+#skill8 {
+  flex: none;
+  order: 7;
+  flex-grow: 0;
+  width: 139px;
+  padding: 17px 5px;
+}
+
+/* EXPERIENCES */
+
+#my-experiences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 60px;
+
+  width: 1238px;
+  height: 997.29px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+#experience-title {
+  width: 424px;
+  height: 92px;
+
+  font-size: 61px;
+  line-height: 150%;
+  /* identical to box height, or 92px */
+
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.row {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 109px;
+
+  width: 1238px;
+  height: 392.65px;
+
+  /* Inside auto layout */
+  flex: none;
+  flex-grow: 0;
+
+  background-color: green;
+}
+
+#row0 {
+  /* Inside auto layout */
+  order: 1;
+}
+
+#row1 {
+  /* Inside auto layout */
+  order: 2;
+}
+
+.experience {
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 8px;
+  isolation: isolate;
+
+  width: 340px;
+  height: 392.65px;
+
+  /* Inside auto layout */
+  flex: none;
+  flex-grow: 0;
+}
+
+#experience00,
+#experience10 {
+  order: 0;
+}
+
+#experience01,
+#experience11 {
+  order: 1;
+}
+
+#experience02,
+#extra-experience {
+  order: 2;
+}
+
+#extra-experience {
+  justify-content: center;
+  padding: 155px 34px;
+
+  width: 340px;
+  height: 392.65px;
+}
+
+.layout {
+  /* layout */
+
+  position: relative;
+  width: 340px;
+  height: 392.65px;
+  left: 0px;
+  top: 0px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 0;
+}
+
+.big-rectangle {
+  position: relative;
+  width: 340px;
+  height: 392.65px;
+  left: 0px;
+  top: 0px;
+
+  background: rgba(255, 255, 255, 0.47);
+  border-radius: 35px;
+}
+
+/* EXPEREINCES-PICTURE */
+
+.picture-frame {
+  position: relative;
+  width: 340px;
+  height: 249px;
+  left: 0px;
+  top: 0px;
+
+  background-size: cover;
+  border-radius: 35px;
+}
+
+#hult-prize-logo {
+  background: url("resume-images/hult-prize-logo.jpg");
+  background-size: cover;
+}
+
+#wie-image {
+  background: url("resume-images/wie-image.jpg");
+  background-size: cover;
+}
+
+#the-zerone {
+  background: url("resume-images/the-zerone.png");
+  background-size: cover;
+}
+
+#locus-2024-logo {
+  background: url("resume-images/locus-2024-logo.jpg");
+  background-size: cover;
+}
+
+#sound-youth-club {
+  background: url("resume-images/sound-youth-club.jpg");
+  background-size: cover;
+}
+
+/* EXPEREINCES-TEXT */
+.text {
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 315.32px;
+  height: 115.66px;
+  margin: 12.34px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
+}
+
+.role {
+  /* role */
+
+  width: 315.32px;
+  height: 24.85px;
+
+  font-size: 21px;
+  line-height: 100%;
+  /* or 32px */
+
+  color: #000000;
+
+  -webkit-text-stroke: 0.5px black;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.organization {
+  /* organization */
+
+  width: 285.01px;
+  height: 45.69px;
+
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.description {
+  /* description */
+
+  width: 315.32px;
+  height: 36.11px;
+
+  font-size: 12px;
+  line-height: 150%;
+  /* or 18px */
+
+  color: #50514f;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.extra-frame {
+  /* extra-frame */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  isolation: isolate;
+
+  width: 340px;
+  height: 392.65px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.extra-text {
+  /* more-to-come */
+
+  width: 251px;
+  height: 54px;
+
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 150%;
+
+  color: #50514f;
 }

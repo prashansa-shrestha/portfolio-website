@@ -1,118 +1,638 @@
-/* rows */
+/* My-Experiences */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 0px;
-gap: 67px;
-
-position: absolute;
-width: 1302px;
-height: 530px;
-left: 30px;
-top: 834px;
-
-
-
-/* black */
-
-width: 494px;
-height: 530px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
-
-/* rectangle-outer */
-
-position: absolute;
-width: 494px;
-height: 530px;
-left: 0px;
-top: 0px;
-
-background: #000000;
-border-radius: 45px;
-
-
-/* rectangle-inner */
-
-position: absolute;
-width: 340.01px;
-height: 366.53px;
-left: 153.99px;
-top: 163.47px;
-
-background: #FFFFFF;
-border-radius: 20px;
-
-
-/* project title */
-
-position: absolute;
-width: 288.34px;
-height: 61.09px;
-left: 41px;
-top: 50px;
-
-
-
-
-/* yellow */
-
-width: 741px;
-height: 530px;
-
+width: 1238px;
+height: 997.65px;
 
 /* Inside auto layout */
 flex: none;
 order: 1;
 flex-grow: 0;
 
-
-/* rectangle-oute */
-
-position: absolute;
-width: 741px;
-height: 530px;
-left: 561px;
-top: 0px;
-
-background: #F6FEAA;
-border-radius: 45px;
-
-
-/* rectangle-inner */
+/* experience-title */
 
 position: absolute;
-width: 510.02px;
-height: 366.53px;
-left: 791.98px;
-top: 163.47px;
+width: 424px;
+height: 92px;
+left: 408px;
+top: 307px;
 
-background: #FFFFFF;
-border-radius: 20px;
-
-
-/* project title */
-
-position: absolute;
-width: 432.51px;
-height: 61.09px;
-left: 44.66px;
-top: 50.09px;
-
-font-family: 'PT Serif';
+font-family: "PT Serif";
 font-style: normal;
-font-weight: 700;
-font-size: 47px;
+font-weight: 400;
+font-size: 61px;
 line-height: 150%;
-/* or 70px */
+/* identical to box height, or 92px */
 
 color: #000000;
 
+/* row1 */
+
+position: absolute;
+width: 1238px;
+height: 392.65px;
+left: 0px;
+top: 459px;
+
+/* experience */
+
+position: absolute;
+width: 340px;
+height: 392.65px;
+left: 0px;
+top: 459px;
+
+/* layout */
+
+position: absolute;
+width: 340px;
+height: 392.65px;
+left: 0px;
+top: 459px;
+
+/* big-rect */
+
+position: absolute;
+width: 340px;
+height: 392.65px;
+left: 0px;
+top: 459px;
+
+background: rgba(255, 255, 255, 0.47);
+border-radius: 35px;
+
+/* hult-prize-logo */
+
+position: absolute;
+width: 340px;
+height: 249px;
+left: 0px;
+top: 459px;
+
+background: url(hult-prize-logo.jpg);
+border-radius: 35px;
+
+/* text */
+
+position: absolute;
+width: 315.32px;
+height: 111.06px;
+left: 19.19px;
+top: 722.34px;
+
+/* description */
+
+position: absolute;
+width: 315.32px;
+height: 81.64px;
+left: 19.19px;
+top: 751.76px;
+
+/* organization */
+
+position: absolute;
+width: 285.01px;
+height: 45.69px;
+left: 19.36px;
+top: 751.76px;
+
+font-family: "PT Serif";
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+color: #000000;
+
+/* work-description */
+
+position: absolute;
+width: 315.32px;
+height: 36.11px;
+left: 19.19px;
+top: 797.28px;
+
+font-family: "PT Serif";
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+/* or 18px */
+
+color: #50514f;
+
+/* role */
+
+position: absolute;
+width: 299.97px;
+height: 33.85px;
+left: 19.19px;
+top: 722.34px;
+
+font-family: "PT Serif";
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 150%;
+/* or 32px */
+
+color: #000000;
+
+border: 0.5px solid #000000;
+
+/* experience */
+
+position: absolute;
+width: 340px;
+height: 392.65px;
+left: 448px;
+top: 459px;
+
+/* layout */
+
+position: absolute;
+width: 340px;
+height: 392.65px;
+left: 448px;
+top: 459px;
+
+/* big-rect */
+
+position: absolute;
+width: 340px;
+height: 392.65px;
+left: 448px;
+top: 459px;
+
+background: rgba(255, 255, 255, 0.47);
+border-radius: 35px;
+
+/* Rectangle 17 */
+
+position: absolute;
+width: 340px;
+height: 249px;
+left: 448px;
+top: 459px;
+
+background: url(fec10fb8-f809-4100-814a-42bf100650b9.jpg);
+
+/* text */
+
+position: absolute;
+width: 315.32px;
+height: 111.06px;
+left: 467.19px;
+top: 722.34px;
+
+/* description */
+
+position: absolute;
+width: 315.32px;
+height: 81.64px;
+left: 467.19px;
+top: 751.76px;
+
+/* organization */
+
+position: absolute;
+width: 285.01px;
+height: 45.69px;
+left: 467.36px;
+top: 751.76px;
+
+font-family: "PT Serif";
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+color: #000000;
+
+/* work-description */
+
+position: absolute;
+width: 315.32px;
+height: 36.11px;
+left: 467.19px;
+top: 797.28px;
+
+font-family: "PT Serif";
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+/* or 18px */
+
+color: #50514f;
+
+/* role */
+
+position: absolute;
+width: 299.97px;
+height: 33.85px;
+left: 467.19px;
+top: 722.34px;
+
+font-family: "PT Serif";
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 150%;
+/* or 32px */
+
+color: #000000;
+
+border: 0.5px solid #000000;
+
+/* experience */
+
+position: absolute;
+width: 340px;
+height: 392.65px;
+left: 898px;
+top: 459px;
+
+/* layout */
+
+position: absolute;
+width: 340px;
+height: 392.65px;
+left: 898px;
+top: 459px;
+
+/* big-rect */
+
+position: absolute;
+width: 340px;
+height: 392.65px;
+left: 898px;
+top: 459px;
+
+background: rgba(255, 255, 255, 0.47);
+border-radius: 35px;
+
+/* the-zerone */
+
+position: absolute;
+width: 340px;
+height: 249px;
+left: 898px;
+top: 459px;
+
+background: url(the-zerone.png);
+border-radius: 35px;
+
+/* text */
+
+position: absolute;
+width: 315.32px;
+height: 111.06px;
+left: 917.19px;
+top: 722.34px;
+
+/* description */
+
+position: absolute;
+width: 315.32px;
+height: 81.64px;
+left: 917.19px;
+top: 751.76px;
+
+/* organization */
+
+position: absolute;
+width: 285.01px;
+height: 45.69px;
+left: 917.36px;
+top: 751.76px;
+
+font-family: "PT Serif";
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+color: #000000;
+
+/* work-description */
+
+position: absolute;
+width: 315.32px;
+height: 36.11px;
+left: 917.19px;
+top: 797.28px;
+
+font-family: "PT Serif";
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+/* or 18px */
+
+color: #50514f;
+
+/* role */
+
+position: absolute;
+width: 299.97px;
+height: 33.85px;
+left: 917.19px;
+top: 722.34px;
+
+font-family: "PT Serif";
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 150%;
+/* or 32px */
+
+color: #000000;
+
+border: 0.5px solid #000000;
+
+/* row2 */
+
+position: absolute;
+width: 1238px;
+height: 392.65px;
+left: 0px;
+top: 912px;
+
+/* experience */
+
+position: absolute;
+width: 340px;
+height: 392.65px;
+left: 0px;
+top: 912px;
+
+/* layout */
+
+position: absolute;
+width: 340px;
+height: 392.65px;
+left: 0px;
+top: 912px;
+
+/* big-rect */
+
+position: absolute;
+width: 340px;
+height: 392.65px;
+left: 0px;
+top: 912px;
+
+background: rgba(255, 255, 255, 0.47);
+border-radius: 35px;
+
+/* locus-2024-logo */
+
+position: absolute;
+width: 340px;
+height: 249px;
+left: 0px;
+top: 912px;
+
+background: url(locus-2024-logo.jpg);
+border-radius: 35px;
+
+/* text */
+
+position: absolute;
+width: 315.32px;
+height: 111.06px;
+left: 19.19px;
+top: 1175.34px;
+
+/* description */
+
+position: absolute;
+width: 315.32px;
+height: 81.64px;
+left: 19.19px;
+top: 1204.76px;
+
+/* organization */
+
+position: absolute;
+width: 285.01px;
+height: 45.69px;
+left: 19.36px;
+top: 1204.76px;
+
+font-family: "PT Serif";
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+color: #000000;
+
+/* work-description */
+
+position: absolute;
+width: 315.32px;
+height: 36.11px;
+left: 19.19px;
+top: 1250.28px;
+
+font-family: "PT Serif";
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+/* or 18px */
+
+color: #50514f;
+
+/* role */
+
+position: absolute;
+width: 299.97px;
+height: 33.85px;
+left: 19.19px;
+top: 1175.34px;
+
+font-family: "PT Serif";
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 150%;
+/* or 32px */
+
+color: #000000;
+
+border: 0.5px solid #000000;
+
+/* experience */
+
+position: absolute;
+width: 340px;
+height: 392.65px;
+left: 448px;
+top: 912px;
+
+/* layout */
+
+position: absolute;
+width: 340px;
+height: 392.65px;
+left: 448px;
+top: 912px;
+
+/* big-rect */
+
+position: absolute;
+width: 340px;
+height: 392.65px;
+left: 448px;
+top: 912px;
+
+background: rgba(255, 255, 255, 0.47);
+border-radius: 35px;
+
+/* Rectangle 17 */
+
+position: absolute;
+width: 340px;
+height: 249px;
+left: 448px;
+top: 912px;
+
+background: url(IMG_8257.png);
+border-radius: 35px;
+
+/* text */
+
+position: absolute;
+width: 315.32px;
+height: 111.06px;
+left: 467.19px;
+top: 1175.34px;
+
+/* description */
+
+position: absolute;
+width: 315.32px;
+height: 81.64px;
+left: 467.19px;
+top: 1204.76px;
+
+/* organization */
+
+position: absolute;
+width: 285.01px;
+height: 45.69px;
+left: 467.36px;
+top: 1204.76px;
+
+font-family: "PT Serif";
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+color: #000000;
+
+/* work-description */
+
+position: absolute;
+width: 315.32px;
+height: 36.11px;
+left: 467.19px;
+top: 1250.28px;
+
+font-family: "PT Serif";
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+/* or 18px */
+
+color: #50514f;
+
+/* role */
+
+position: absolute;
+width: 299.97px;
+height: 33.85px;
+left: 467.19px;
+top: 1175.34px;
+
+font-family: "PT Serif";
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 150%;
+/* or 32px */
+
+color: #000000;
+
+border: 0.5px solid #000000;
+
+/* experience */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 155px 34px;
+gap: 8px;
+isolation: isolate;
+
+position: absolute;
+width: 340px;
+height: 392.65px;
+left: 898px;
+top: 912px;
+
+/* layout */
+
+position: absolute;
+width: 340px;
+height: 392.65px;
+left: 0px;
+top: 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+/* big-rect */
+
+position: absolute;
+width: 340px;
+height: 392.65px;
+left: 0px;
+top: 0px;
+
+background: rgba(255, 255, 255, 0.47);
+border-radius: 35px;
+
+/* Type@61 */
+
+width: 251px;
+height: 54px;
+
+font-family: "PT Serif";
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 150%;
+/* identical to box height, or 54px */
+
+color: #50514f;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
