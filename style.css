@@ -230,7 +230,7 @@ header {
   /* project title */
 
   position: absolute;
-  width: 288.34px;
+  width: 328.34px;
   height: 61.09px;
   left: 41px;
   top: 50px;
@@ -251,13 +251,18 @@ header {
 }
 
 .small-black-rectangle-inner0 {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+
   position: absolute;
   width: 340.01px;
   height: 366.53px;
   left: 153.99px;
   top: 163.47px;
 
-  background: #ffffff;
+  background-image: url("index-images/tarot_backdrop.jpg");
+  background-size: cover;
   border-radius: 20px;
 }
 
@@ -299,7 +304,8 @@ header {
   left: 791.98px;
   top: 163.47px;
 
-  background: #ffffff;
+  background-image: url("index-images/expense-tracker.png");
+  background-size: cover;
   border-radius: 20px;
 }
 
@@ -341,7 +347,8 @@ header {
   left: 965.99px;
   top: 164.47px;
 
-  background: #ffffff;
+  background-image: url("index-images/graph-plotter-3.PNG");
+  background-size: cover;
   border-radius: 20px;
 }
 
