@@ -16,7 +16,9 @@
 }
 
 #resume-body {
-  min-height: 300vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 5500px;
   background: linear-gradient(
     180deg,
     rgba(164, 184, 196, 0.5) 0%,
@@ -57,6 +59,8 @@ header {
   justify-content: center;
   align-items: center;
   height: 30px;
+
+  order: 1;
 }
 
 .navbar {
@@ -90,6 +94,10 @@ header {
   text-decoration: none;
   font-size: 21px;
   color: #50514f;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
 }
 
 #big1 {
@@ -401,6 +409,8 @@ footer {
   font-size: 27px;
   line-height: 150%;
   color: #000000;
+
+  order: 2;
 }
 
 #footer-line {
@@ -428,8 +438,7 @@ footer {
 
   position: absolute;
   height: 41px;
-  left: 1015px;
-  right: 85px;
+  right: 81px;
   bottom: 0px;
 
   color: #000000;
@@ -457,6 +466,10 @@ footer {
 
 .external-links a {
   color: #000000;
+  z-index: 2;
+
+  transform: scale(1.3);
+  display: inline-block; /* This ensures the scaling works correctly */
 }
 
 #linkedin-icon {
@@ -464,7 +477,6 @@ footer {
 
   width: 42px;
   height: 42px;
-  transform: scale(1.3);
 
   /* Inside auto layout */
   flex: none;
@@ -472,15 +484,22 @@ footer {
   flex-grow: 0;
 }
 
+#linkedin-icon:hover {
+  color: #251351;
+}
+
 #github-icon {
   width: 42px;
   height: 42px;
-  transform: scale(1.3);
 
   /* Inside auto layout */
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+
+#github-icon:hover {
+  color: #251351;
 }
 
 /* END FOOTER */
@@ -514,14 +533,14 @@ footer {
   padding: 0px;
   gap: 165px;
 
-  background: url("about-images/image-background.png");
+  background: url("graphics/overlay2.jpg");
   background-size: cover;
 
   position: relative;
   width: 1220px;
   height: 426px;
   left: 73px;
-  top: 338px;
+  top: 321px;
 
   z-index: 1;
 
@@ -543,9 +562,9 @@ footer {
   /* or 40px */
   text-align: justify;
 
-  color: #ffffff;
-
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #050609;
+  /* 
+  border: 1px solid rgba(0, 0, 0, 0.2); */
 }
 
 #grey-fill {
@@ -555,7 +574,7 @@ footer {
   left: 0px;
   top: 0px;
 
-  background: rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 32px;
 }
 
@@ -565,6 +584,10 @@ footer {
   height: 363px;
   left: 354px;
   top: 31px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   z-index: 2;
 
@@ -600,6 +623,8 @@ footer {
   height: 5096.54px;
   left: 64px;
   top: 128px;
+
+  order: 1;
 }
 
 #skills {
@@ -723,8 +748,6 @@ footer {
   /* Inside auto layout */
   flex: none;
   flex-grow: 0;
-
-  background-color: green;
 }
 
 #row0 {
@@ -735,6 +758,11 @@ footer {
 #row1 {
   /* Inside auto layout */
   order: 2;
+}
+
+#row2 {
+  /* Inside auto layout */
+  order: 3;
 }
 
 .experience {
@@ -772,7 +800,6 @@ footer {
 
 #extra-experience {
   justify-content: center;
-  padding: 155px 34px;
 
   width: 340px;
   height: 392.65px;
@@ -819,8 +846,9 @@ footer {
 }
 
 #hult-prize-logo {
-  background: url("resume-images/hult-prize-logo.jpg");
+  background: url("resume-images/hult-prize-logo2.jpg");
   background-size: cover;
+  /* height: 60%; */
 }
 
 #wie-image {
@@ -891,6 +919,7 @@ footer {
   height: 45.69px;
 
   font-size: 16px;
+  font-style: italic;
   line-height: 150%;
   /* or 24px */
 
@@ -908,7 +937,7 @@ footer {
   width: 315.32px;
   height: 36.11px;
 
-  font-size: 12px;
+  font-size: 16px;
   line-height: 150%;
   /* or 18px */
 
@@ -939,6 +968,9 @@ footer {
   flex: none;
   order: 2;
   flex-grow: 0;
+
+  background: rgba(255, 255, 255, 0.47);
+  border-radius: 35px;
 }
 
 .extra-text {
@@ -954,4 +986,765 @@ footer {
   line-height: 150%;
 
   color: #50514f;
+}
+
+/* PARTICIPATION-SECTION */
+#participations {
+  /* Participations */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 60px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  width: 1236.78px;
+  /* height: 1569.65px; */
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+#participations-title {
+  /* Type@80 */
+
+  width: 381px;
+  height: 92px;
+  left: 426.95px;
+  top: 1423.29px;
+
+  font-size: 61px;
+  line-height: 150%;
+  /* identical to box height, or 92px */
+
+  color: #000000;
+}
+
+.participation {
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 8px;
+  isolation: isolate;
+
+  width: 340px;
+  height: 392.65px;
+
+  /* Inside auto layout */
+  flex: none;
+  flex-grow: 0;
+}
+
+.part-organization {
+  /* organization */
+  /* 
+  position: absolute; */
+  width: 277.47px;
+  height: 26px;
+  left: 19.8px;
+  top: 1859.05px;
+
+  font-size: 16px;
+  line-height: 150%;
+  font-style: italic;
+  color: #000000;
+}
+
+.part-description {
+  /* work-description */
+
+  position: static;
+  width: 307px;
+  height: 58px;
+  left: 19px;
+  top: 1882px;
+
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 18px */
+
+  color: #50514f;
+}
+
+#ui-ux-role {
+  height: 52.85px;
+  line-height: 125%;
+}
+
+#seeds-group {
+  background-image: url("resume-images/seeds-group.jpg");
+  background-size: cover;
+}
+
+#blockchain-workshop {
+  background-image: url("resume-images/blockchain-workshop.jpg");
+  background-size: cover;
+}
+
+#ui-ux-workshop {
+  background-image: url("resume-images/ui-ux-workshop.jpg");
+  background-size: cover;
+}
+
+#software-fellowship-certificate {
+  background-image: url("resume-images/software-fellowship-certificate.jpg");
+  background-size: cover;
+}
+
+#robocamp-certificate {
+  background-image: url("resume-images/robocamp-certificate.jpg");
+  background-size: cover;
+}
+
+#latex-workshop {
+  background-image: url("resume-images/latex-workshop.jpg");
+  background-size: cover;
+}
+
+#nasa-space-apps {
+  background-image: url("resume-images/nasa-space-apps.jpg");
+  background-size: cover;
+}
+#blob-left {
+  background-image: url("background-images/blob-left.png");
+  background-size: contain;
+
+  position: absolute;
+
+  left: -240px;
+  top: 0px;
+  width: 600px;
+  height: 481px;
+}
+
+#education-blob-left {
+  background-image: url("background-images/education-blob-left.png");
+
+  position: absolute;
+  width: 900.53px;
+  height: 1059.91px;
+  left: -653px;
+  top: 2954px;
+}
+
+#education-blob-right {
+  background-image: url("background-images/education-blob-right.png");
+  /* education-blob-right */
+
+  position: absolute;
+  width: 827.12px;
+  height: 933px;
+
+  right: -500px;
+  top: 2954px;
+}
+
+#education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 27px;
+  isolation: isolate;
+
+  width: 483.27px;
+  height: 587.75px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+#education-title {
+  /* title */
+
+  position: relative;
+  width: 275px;
+  height: 92px;
+  /* top: 3111.94px; */
+
+  font-size: 61px;
+  line-height: 150%;
+}
+
+#education-list {
+  /* education-list */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 71px;
+
+  position: relative;
+  width: 483.27px;
+  height: 468.75px;
+}
+
+.education-degree {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  width: 483.27px;
+  height: 108.92px;
+
+  background: #fefbf3;
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.education-text {
+  /* education-text */
+
+  width: 428.37px;
+  height: 76.06px;
+  left: 19px;
+  top: 17px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.degree {
+  /* degree */
+
+  position: relative;
+  width: 428px;
+  height: 34px;
+  left: 19px;
+  top: 17px;
+
+  font-size: 21px;
+  line-height: 150%;
+  /* or 32px */
+}
+
+.alma-mater {
+  /* alma-mater */
+
+  position: relative;
+  width: 408px;
+  height: 20px;
+  left: 19px;
+  top: 14px;
+
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14.4px;
+  line-height: 150%;
+  /* or 18px */
+
+  color: #000000;
+}
+
+.percentage {
+  /* percentage */
+  position: relative;
+  width: 300px;
+  height: 18px;
+  left: 19px;
+  top: 16px;
+
+  display: inline-block;
+
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 14.4px;
+  line-height: 150%;
+}
+
+mark.colored-percent {
+  color: #7c0606;
+  background: none;
+}
+
+#education-connector {
+  /* connector */
+
+  position: absolute;
+  width: 0px;
+  height: 301.43px;
+  left: 616.73px;
+  top: 3198.06px;
+
+  border: 3px solid #a4b8c4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#education-vector {
+  background-image: url("background-images/education-vector.png");
+
+  position: absolute;
+  width: 203.34px;
+  height: 422.42px;
+  left: 657.88px;
+  top: 3161.76px;
+  z-index: 2;
+}
+
+#awards {
+  /* awards-and-recognition */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 37px;
+
+  width: 710.35px;
+
+  flex: none;
+  order: 5;
+  flex-grow: 0;
+}
+
+#awards-title {
+  width: 634px;
+  height: 92px;
+  left: 38.17px;
+  top: 0px;
+
+  font-size: 61px;
+  line-height: 150%;
+  /* identical to box height, or 92px */
+}
+
+#awards-list {
+  /* awards-list */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+
+  width: 710.35px;
+  height: 1149px;
+
+  /* Inside auto layout */
+  flex: none;
+  flex-direction: row;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+#timeline {
+  /* timeline */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 63px;
+
+  width: 141.5px;
+  height: 1149px;
+
+  /* date */
+
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 150%;
+  /* identical to box height, or 32px */
+
+  color: #50514f;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.one-award {
+  /* timeline-2024 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* padding: 26px 44px; */
+  gap: 8px;
+
+  width: 141.5px;
+  height: 90px;
+
+  background: rgba(253, 251, 245, 0.75);
+  border-radius: 15px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.two-award {
+  /* timeline-2023 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 101px 44px; */
+  gap: 8px;
+
+  width: 141.5px;
+  height: 243px;
+
+  background: rgba(253, 251, 245, 0.75);
+  border-radius: 15px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+#year24 {
+  order: 1;
+}
+
+#year23 {
+  order: 2;
+}
+
+#year22 {
+  order: 3;
+}
+
+#year20 {
+  order: 4;
+}
+
+#year19 {
+  order: 5;
+}
+
+#year16 {
+  order: 6;
+}
+
+#awards-description-list {
+  /* awards-description-list */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 63px;
+  top: 0px;
+
+  width: 481px;
+  /* height: 1148px; */
+}
+
+.award-li {
+  /* hult-prize */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: 481px;
+  height: 90px;
+
+  background: #fefbf3;
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.award-text {
+  /* award-text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.award-name {
+  /* award-name */
+
+  position: relative;
+  /* width: 433px; */
+  height: 32px;
+  align-items: center;
+  /* left: calc(50% - 433px / 2);
+  top: 17px; */
+
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 150%;
+  /* identical to box height, or 32px */
+
+  color: #000000;
+}
+.associated-institute {
+  /* associated-institute */
+  /* 
+  width: 215px; */
+  height: 18px;
+
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+
+  color: #000000;
+}
+
+#award-bg-vector1 {
+  background: url("background-images/award-vector.png");
+  background-size: cover;
+  /* Vector */
+
+  position: absolute;
+  width: 186px;
+  height: 362px;
+  left: 779px;
+  top: 3862px;
+}
+#award-bg-vector2 {
+  background: url("background-images/award-vector.png");
+  background-size: cover;
+  /* Vector */
+
+  position: absolute;
+  width: 186px;
+  height: 362px;
+  left: 779px;
+  top: 4321px;
+}
+
+#award-bg-vector3 {
+  background: url("background-images/award-vector.png");
+  background-size: cover;
+  /* Vector */
+
+  position: absolute;
+  width: 186px;
+  height: 242px;
+  left: 781px;
+  top: 4788px;
+}
+
+#awards-connector {
+  /* awards-connector */
+
+  position: absolute;
+  width: 1075.02px;
+  height: 0px;
+  left: 182px;
+  top: 4391.07px;
+
+  z-index: -1;
+
+  border: 2.5px solid #a4b8c4;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  transform: rotate(90deg);
+}
+
+#resume-footer {
+  position: absolute;
+  top: 5280.5px;
+}
+
+/* CONTACT ME PAGE */
+
+.gradient-contact-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  width: 1366px;
+  height: 888px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(164, 184, 196, 0.5) 0%,
+    rgba(208, 178, 193, 0.5) 20%,
+    rgba(251, 172, 190, 0.5) 100%
+  );
+}
+
+#reach-out-title {
+  /* reach-out-title */
+
+  position: absolute;
+  width: 354px;
+  height: 71px;
+  left: 514px;
+  top: 144px;
+
+  font-size: 47px;
+  line-height: 150%;
+  /* identical to box height, or 70px */
+
+  color: #30292f;
+
+  mix-blend-mode: hard-light;
+}
+
+#reach-out-section {
+  /* reach-out */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 36px;
+
+  position: absolute;
+  width: 537px;
+  left: 414px;
+  top: 256px;
+}
+
+.contact {
+  /* email */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 29px;
+
+  width: 537px;
+  height: 96px;
+
+  background: rgba(255, 255, 255, 0.47);
+  border-radius: 50px;
+
+  color: #29274c;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+#linkedin-contact:hover,
+#github-contact:hover {
+  background: rgba(93, 81, 121, 0.47);
+  color: #ffffff;
+}
+
+.icon {
+  /* email-icon */
+
+  width: 42.2px;
+  height: 60px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#email-icon {
+  background-image: url("contact-images/email-icon.png");
+  background-size: cover;
+}
+
+#linkedin-contact-icon {
+  background-image: url("contact-images/linkedin-icon.png");
+  background-size: cover;
+  width: 62.48px;
+  height: 60px;
+  position: absolute;
+  left: 24px;
+}
+
+#github-contact-icon {
+  background-image: url("contact-images/github-icon.png");
+  background-size: contain;
+  width: 45px;
+  height: 60px;
+  position: absolute;
+  left: 24px;
+}
+
+.username {
+  /* prashansashrestha1@gmail.com */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  width: 393px;
+  height: 41px;
+  z-index: 2;
+  font-size: 27px;
+  line-height: 150%;
+  /* identical to box height, or 40px */
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+#linkedin-username,
+#github-username {
+  position: absolute;
+  left: 171.5px;
+}
+
+#contact-footer {
+  position: absolute;
+  top: 675px;
 }
